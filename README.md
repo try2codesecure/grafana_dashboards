@@ -3,6 +3,7 @@ collection of grafana dashboards
 
 
 ### OpenWRT Dashboard
+![OpenWRT](../master/openwrt.png)
 
 Prometheus source, for node_exporter
 
@@ -19,7 +20,7 @@ Only requires the default job_name: node, add as many targets as you need in '/e
       - targets: ['localhost:9100']
 ```
 
-The following lua scripts has to be installed on your OpenWRT router:
+The following lua scripts has to be installen on yout openwrt router:
 
 ```
 prometheus-node-exporter-lua
@@ -34,4 +35,8 @@ prometheus-node-exporter-lua-wifi_stations
 Notes:
 
 tested with prometheus-node-exporter-lua scripts version 2019.08.14-1
+
+
+
+
 
