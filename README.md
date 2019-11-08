@@ -5,6 +5,8 @@ collection of grafana dashboards
 ### OpenWRT Dashboard
 ![OpenWRT](../master/openwrt.png)
 
+Grafana Url --> https://grafana.com/grafana/dashboards/11147
+
 Prometheus source, for node_exporter
 
 Monitor for OpenWRT routers
