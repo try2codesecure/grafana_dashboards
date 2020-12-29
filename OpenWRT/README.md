@@ -1,4 +1,5 @@
 ### OpenWRT Dashboard
+
 ![OpenWRT](../OpenWRT/openwrt.png "OpenWRT Dashboard")
 
 Grafana Url --> https://grafana.com/grafana/dashboards/11147
