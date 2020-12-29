@@ -1,5 +1,5 @@
 ### OpenWRT Dashboard
-![OpenWRT](../master/OpenWRT/openwrt.png)
+[OpenWRT](../OpenWRT/openwrt.png)
 
 Grafana Url --> https://grafana.com/grafana/dashboards/11147
 
