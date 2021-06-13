@@ -1208,7 +1208,7 @@
           "value": "null"
         }
       ],
-      "valueName": "total"
+      "valueName": "current"
     },
     {
       "cacheTimeout": null,
@@ -1222,7 +1222,7 @@
       "datasource": "${DS_PROMETHEUS}",
       "decimals": 2,
       "description": "Total NAT traffic (WAN)",
-      "format": "bits",
+      "format": "bytes",
       "gauge": {
         "maxValue": 100,
         "minValue": 0,
