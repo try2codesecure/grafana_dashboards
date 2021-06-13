@@ -5136,13 +5136,13 @@
       "interval": "5m",
       "legend": {
         "alignAsTable": true,
-        "avg": true,
-        "current": false,
+        "avg": false,
+        "current": true,
         "max": false,
         "min": false,
         "rightSide": true,
         "show": true,
-        "total": true,
+        "total": false,
         "values": true
       },
       "lines": true,
@@ -5225,13 +5225,13 @@
       "interval": "5m",
       "legend": {
         "alignAsTable": true,
-        "avg": true,
-        "current": false,
+        "avg": false,
+        "current": true,
         "max": false,
         "min": false,
         "rightSide": true,
         "show": true,
-        "total": true,
+        "total": false,
         "values": true
       },
       "lines": true,
