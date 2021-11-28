@@ -1192,6 +1192,7 @@
       "targets": [
         {
           "expr": "(sum(node_network_transmit_bytes_total{instance=~\"$node:$port\",job=~\"$job\"}) + sum(node_network_receive_bytes_total{instance=~\"$node:$port\",job=~\"$job\"}))",
+          "instant": true,
           "intervalFactor": 1,
           "refId": "A",
           "step": 900
