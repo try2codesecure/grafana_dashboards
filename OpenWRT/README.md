@@ -43,13 +43,6 @@ config prometheus-node-exporter-lua 'main'
 
 Restart via `/etc/init.d/prometheus-node-exporter-lua restart`. Now metrics can be viewed by http://<IP>:9100/metrics
 
-If you don't get number of Wifistations and details
-```
-opkg remove wpad-basic-wolfssl
-opkg install wpad-wolfssl
-reboot
-```
-
 Notes:
 
 tested with prometheus-node-exporter-lua scripts version 2019.08.14-1
