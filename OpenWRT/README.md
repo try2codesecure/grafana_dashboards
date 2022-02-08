@@ -32,6 +32,17 @@ prometheus-node-exporter-lua-wifi
 prometheus-node-exporter-lua-wifi_stations
 ```
 
+To make the metrics accessible to other hosts than localhost edit `/etc/config/prometheus-node-exporter-lua` and change `localhost` to `lan`
+
+```
+config prometheus-node-exporter-lua 'main'
+        option listen_interface 'lan'
+        option listen_ipv6 '0'
+        option listen_port '9100'
+```
+
+Restart via `/etc/init.d/prometheus-node-exporter-lua restart`. Now metrics can be viewed by http://<IP>:9100/metrics
+
 If you don't get number of Wifistations and details
 ```
 opkg remove wpad-basic-wolfssl
