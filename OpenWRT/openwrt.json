@@ -24,7 +24,7 @@
   "gnetId": 11147,
   "graphTooltip": 0,
   "id": 37,
-  "iteration": 1644278756143,
+  "iteration": 1644278756183,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -1063,7 +1063,7 @@
         "orientation": "horizontal",
         "reduceOptions": {
           "calcs": [
-            "sum"
+            "last"
           ],
           "fields": "",
           "values": false
@@ -1073,8 +1073,15 @@
       "pluginVersion": "8.3.3",
       "targets": [
         {
-          "expr": "(sum(node_network_transmit_bytes_total{instance=~\"$node:$port\",job=~\"$job\"}) + sum(node_network_receive_bytes_total{instance=~\"$node:$port\",job=~\"$job\"}))",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "7Qy91FWRz"
+          },
+          "exemplar": true,
+          "expr": "sum((node_network_transmit_bytes_total{instance=~\"$node:$port\",job=~\"$job\"})) + sum((node_network_receive_bytes_total{instance=~\"$node:$port\",job=~\"$job\"}))",
+          "interval": "",
           "intervalFactor": 1,
+          "legendFormat": "",
           "refId": "A",
           "step": 900
         }
@@ -5534,12 +5541,14 @@
       },
       "yaxes": [
         {
+          "$$hashKey": "object:1232",
           "format": "pps",
           "label": "Packets out (-) / in (+)",
           "logBase": 1,
           "show": true
         },
         {
+          "$$hashKey": "object:1233",
           "format": "short",
           "logBase": 1,
           "show": false
@@ -7333,7 +7342,7 @@
     ]
   },
   "time": {
-    "from": "now-15m",
+    "from": "now-1h",
     "to": "now"
   },
   "timepicker": {
@@ -7364,6 +7373,6 @@
   "timezone": "browser",
   "title": "OpenWRT",
   "uid": "fLi0yXAWk",
-  "version": 4,
+  "version": 5,
   "weekStart": ""
 }
